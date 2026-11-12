@@ -1,10 +1,12 @@
 name: Test de Bienvenida
+
 on:
- push:
- branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+
 jobs:
- saludo:
- runs-on: ubuntu-latest
- steps:
- - name: Ejecutar mensaje
- run: echo "¡El flujo automatizado de GitHub Actions funciona correctamente!"
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ejecutar mensaje
+        run: echo "¡El flujo automatizado de GitHub Actions funciona correctamente!"
